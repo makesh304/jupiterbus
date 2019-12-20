@@ -1,0 +1,124 @@
+
+    <!-- backgroundColor="lightgray" -->
+<!-- <StackLayout>
+
+<Image   src="https://www.jupiterbus.in/asset/images/logo.png"width="80%" class="img-rounded m-b-20 img1"></Image>
+</StackLayout>
+
+<StackLayout class="form">
+    <StackLayout class="input-field">
+<TextField class="input-field1" hint="Email" keyboardType="email" autocorrect="false" autocapitalizationType="none"></TextField>
+    </StackLayout>
+  
+    <StackLayout class="input-field">
+        <TextField class="input-field1" hint="Password"  autocorrect="false" autocapitalizationType="none"></TextField>
+    </StackLayout>
+  
+    <Button text="Log In" class="-primary -rounded-lg" [nsRouterLink]="['/home']" pageTransition="slide" clearHistory="true"></Button>
+  </StackLayout> -->
+  <!-- <GridLayout columns="50, auto, *" rows="50, auto, *" width="210" height="210" backgroundColor="lightgray" >
+    <Label text="Label 1" row="0" col="0" backgroundColor="red"></Label>
+    <Label text="Label 2" row="0" col="1" colSpan="2" backgroundColor="green"></Label>
+    <Label text="Label 3" row="1" col="0" rowSpan="2" backgroundColor="blue"></Label>
+    <Label text="Label 4" row="1" col="1" backgroundColor="yellow"></Label>
+    <Label text="Label 5" row="1" col="2" backgroundColor="orange"></Label>
+    <Label text="Label 6" row="2" col="1" backgroundColor="pink"></Label>
+    <Label text="Label 7" row="2" col="2" backgroundColor="purple"></Label>
+  </GridLayout> -->
+<!--   
+  <GridLayout columns="auto, *" class="nt-drawer__list-item" [class.-selected]="isComponentSelected('/home')" (tap)="onNavItemTap('/home')">
+    <Label col="0" text="&#xf3ff;" class="nt-icon fas"></Label>
+    <Label col="1" text="Book Tickets" class="p-r-10"></Label>
+</GridLayout> -->
+<AbsoluteLayout class="ab"  >
+    <Image    src="https://www.jupiterbus.in/asset/images/logo.png"width="80%" class="img-rounded m-b-20 img1"></Image>
+
+</AbsoluteLayout>
+<GridLayout class="out"  width="95%" height="270" backgroundColor="white" >
+
+   
+
+    <FlexboxLayout  class="fl">
+       
+    <TabView  class="tab"  width="100%" dock="left" tabsBackgroundColor="lightgray" selectedIndex="1" selectedColor="#FF0000" iosIconRenderingMode="alwaysOriginal" sdkExampleTitle sdkToggleNavButton>
+      
+        <GridLayout  *tabItem="{title: 'OTP PIN'}">
+            <StackLayout class="form">
+                <StackLayout class="input-field">
+            <TextField class="input-field1" hint="Mobile" keyboardType="email" autocorrect="false" autocapitalizationType="none"></TextField>
+                </StackLayout>
+              
+              
+                <Button text="Send OTP" class="-primary -rounded-lg" [nsRouterLink]="['/otp']" pageTransition="slide" clearHistory="true"></Button>
+              </StackLayout>
+        </GridLayout>
+        <StackLayout *tabItem="{title: 'LOGIN'}">
+            <StackLayout class="form">
+                <StackLayout class="input-field">
+            <TextField class="input-field1" hint="Mobile" keyboardType="email" autocorrect="false" autocapitalizationType="none"></TextField>
+                </StackLayout>
+              
+                <StackLayout class="input-field">
+                    <TextField class="input-field1" hint="Pin"  autocorrect="false" autocapitalizationType="none"></TextField>
+                </StackLayout>
+              
+                <Button text="Log In" class="-rounded-lg" [nsRouterLink]="['/home']" pageTransition="slide" clearHistory="true"></Button>
+              </StackLayout>	</StackLayout>    
+    </TabView>
+
+</FlexboxLayout>
+  </GridLayout>
+  <AbsoluteLayout height="100%" backgroundColor="white" class="bg">
+        <!-- <Image top="600"  src="~/app/assets/line.png"   ></Image> -->
+        <!-- <Image   src="~/app/assets/bgs.png"   ></Image> -->
+
+  </AbsoluteLayout>
+  <!--  -->
+
+  <!-- <StackLayout class="grid-tab-view" columns="*,100,100,100,*" ios:rows="auto, auto" android:rows="auto, *">
+    <label row="0" col="1" class="tab-button" text="Tab1" (tap)="switchTabByIndex(0)" [ngClass]="{'selected': tabSelectedIndex===0}"></label>
+    <label row="0" col="2" class="tab-button" text="Tab2" (tap)="switchTabByIndex(1)" [ngClass]="{'selected': tabSelectedIndex===1}"></label>
+    <label row="0" col="3" class="tab-button" text="Tab3" (tap)="switchTabByIndex(2)" [ngClass]="{'selected': tabSelectedIndex===2}"></label>
+    <TabView colSpan="5" row="1" col="0" #tabView class="tab-view" [(ngModel)]="tabSelectedIndex" (loaded)="onTabsLoaded()" (selectedIndexChanged)="onTabSwitch($event)">
+      <StackLayout class="tab" *tabItem="{title: 'Tab1'}">
+          <Label text="tab1 body"></Label>
+      </StackLayout>
+      <StackLayout class="tab" *tabItem="{title: 'Tab2'}">
+          <Label text="tab2 body"></Label>
+      </StackLayout>
+      <StackLayout class="tab" *tabItem="{title: 'Tab3'}">
+          <Label text="tab3 body"></Label>
+      </StackLayout>
+    </TabView>
+</StackLayout> -->
+  
+<!-- 
+  <TabView height="100%" class="tab">
+	<StackLayout *tabItem="{title: 'PIN'}" class="full rocket">
+        <StackLayout class="form">
+        <StackLayout class="input-field">
+            <TextField class="input-field1" hint="*****"  autocorrect="false" autocapitalizationType="none"></TextField>
+            <Button text="Log In" class="-primary -rounded-lg" [nsRouterLink]="['/home']" pageTransition="slide" clearHistory="true"></Button>
+        </StackLayout>
+    </StackLayout>
+	</StackLayout>
+
+	<StackLayout *tabItem="{title: 'PASSWORD'}" class="full hulk">
+<StackLayout>
+
+<Image   src="https://www.jupiterbus.in/asset/images/logo.png"width="80%" class="img-rounded m-b-20 img1"></Image>
+</StackLayout>
+
+<StackLayout class="form">
+    <StackLayout class="input-field">
+<TextField class="input-field1" hint="Email" keyboardType="email" autocorrect="false" autocapitalizationType="none"></TextField>
+    </StackLayout>
+  
+    <StackLayout class="input-field">
+        <TextField class="input-field1" hint="Password"  autocorrect="false" autocapitalizationType="none"></TextField>
+    </StackLayout>
+  
+    <Button text="Log In" class="-primary -rounded-lg" [nsRouterLink]="['/home']" pageTransition="slide" clearHistory="true"></Button>
+  </StackLayout>	</StackLayout>
+</TabView> -->
+<!-- <Button text="Go Home" ></Button> -->

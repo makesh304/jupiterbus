@@ -1,0 +1,41 @@
+
+    <FlexboxLayout class="page">
+        <StackLayout class="form">
+            <!-- <Label class="header" text="NAME"></Label> -->
+    
+            <Image    src="https://www.jupiterbus.in/asset/images/logo.png"width="80%" class="img-rounded m-b-20 form"></Image>            <PreviousNextView>
+                <GridLayout rows="auto, auto, auto,auto,auto,auto">
+                    <StackLayout row="0" class="input-field">
+                    
+                            <TextField class="input-field1" hint="First Name"  autocorrect="false" autocapitalizationType="none"></TextField>
+
+
+                        <StackLayout class="hr-light"></StackLayout>
+                    </StackLayout>
+    
+                    <StackLayout row="1" class="input-field">
+                        <TextField class="input-field1" hint="Last Name"  autocorrect="false" autocapitalizationType="none"></TextField>
+
+                        <StackLayout class="hr-light"></StackLayout>
+                    </StackLayout>
+    
+                    <StackLayout row="2"  class="input-field">
+                        <TextField class="input-field1" hint="Email"  autocorrect="false" autocapitalizationType="none"></TextField>
+
+                        <StackLayout class="hr-light"></StackLayout>
+                    </StackLayout>
+                    <StackLayout row="3"  class="input-field">
+                        <TextField class="input-field1" hint="Password"  autocorrect="false" autocapitalizationType="none"></TextField>
+
+                        <StackLayout class="hr-light"></StackLayout>
+                    </StackLayout>
+                    <StackLayout row="4"  class="input-field">
+                        <Button text="Register" class="-primary -rounded-lg" [nsRouterLink]="['/home']" pageTransition="slide" clearHistory="true"></Button>
+
+                        <StackLayout class="hr-light"></StackLayout>
+                    </StackLayout>                </GridLayout>
+            </PreviousNextView>
+    
+        </StackLayout>
+    
+    </FlexboxLayout>

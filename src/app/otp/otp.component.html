@@ -1,0 +1,87 @@
+<!-- <StackLayout  >
+    <Image    src="https://www.jupiterbus.in/asset/images/logo.png"width="80%" class="img-rounded m-b-20 img1"></Image>
+
+
+</StackLayout>
+    <FlexboxLayout>
+        <Label order="2"  text="34343" 
+          height="100" width="100"></Label>
+        <Label order="1" text="Mobile" 
+          height="100" width="100"></Label>
+     
+      </FlexboxLayout>
+<StackLayout>
+    <StackLayout orientation="horizontal">
+        <Button text="Button 1" backgroundColor="#0099CC" width="100" margin="8"></Button>
+        <Button text="Button 2" backgroundColor="#CCFFFF" width="100" margin="8"></Button>
+        <Button text="Button 3" backgroundColor="#8C489F" width="100" margin="8"></Button>
+    </StackLayout>
+</StackLayout>
+
+
+
+<FlexboxLayout alignItems="center" >
+<StackLayout width="100%">
+
+       
+      
+        <StackLayout class="input-field">
+            <TextField class="input-field1" hint="Enter OTP"  autocorrect="false" autocapitalizationType="none"></TextField>
+        </StackLayout>
+        <FlexboxLayout alignItems="center" >
+            <Button text="Back" class="-primary -rounded-lg" [nsRouterLink]="['/login']" pageTransition="slide" clearHistory="true"></Button>
+            <Button text="Log In / Register" class="-primary -rounded-lg" [nsRouterLink]="['/register']" pageTransition="slide" clearHistory="true"></Button>
+
+        </FlexboxLayout>
+      </StackLayout>
+
+</FlexboxLayout> -->
+
+
+<FlexboxLayout class="page">
+    <StackLayout class="form">
+        <!-- <Label class="header" text="NAME"></Label> -->
+
+        <Image    src="https://www.jupiterbus.in/asset/images/logo.png"width="80%" class="img-rounded m-b-20 form"></Image>            <PreviousNextView>
+            <GridLayout rows="auto, auto, auto,auto">
+                <StackLayout row="0" class="input-field">
+                
+                    <Label class="login-label sign-up-label" >
+                        <FormattedString>
+                            <Span text="Mobile" class="bold"></Span>
+                            <Span text="213278485 " ></Span>
+
+                        </FormattedString>
+                        
+                    </Label>
+
+                    <Label class="login-label sign-up-label" (tap)="toggleForm()">
+                        <FormattedString>
+                           
+                            <Span text="Enter OTP" class="bold"></Span>
+
+                        </FormattedString>
+                        
+                    </Label>
+                    <StackLayout class="hr-light"></StackLayout>
+                </StackLayout>
+
+                <StackLayout row="1" class="input-field">
+                    <TextField class="input-field1" hint="Enter OTP"  autocorrect="false" autocapitalizationType="none"></TextField>
+
+                    <StackLayout class="hr-light"></StackLayout>
+                </StackLayout>
+
+                <StackLayout row="2"  class="input-field">
+                    <Button text="Login / Register" class="-primary -rounded-lg" [nsRouterLink]="['/register']" pageTransition="slide" clearHistory="true"></Button>
+
+                    <StackLayout class="hr-light"></StackLayout>
+                </StackLayout>
+            
+                          </GridLayout>
+        </PreviousNextView>
+
+    </StackLayout>
+
+   
+</FlexboxLayout>

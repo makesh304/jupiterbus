@@ -1,0 +1,103 @@
+/* Add mobile styles for the component here.  */
+.page {
+    align-items: center;
+    flex-direction: column;
+  }
+  .form {
+    margin-left: 30;
+    margin-right: 30;
+    flex-grow: 2;
+    vertical-align: middle;
+  }
+  .input-field1{    
+    border-width: 1;
+    border-style: 'solid';
+    border-color: #0266d1;
+    border-radius: 10px;    
+    padding:10;
+    margin-top:20;
+    margin-left: 20;
+    margin-right: 20;   
+    font-size: 16;
+color: black;
+/* placeholder-color:rgba(255,255,255,.6) */
+placeholder-color:black;
+}
+
+.input-field2{    
+  border-width: 1;
+  border-style: 'solid';
+  border-color: #0266d1;
+  border-radius: 10px;    
+
+}
+.out{
+  /* background-image: linear-gradient(to right top, #1c99b3 10%, #0096dc 10%, #008aff 10%, #706dff 10%, #d812eb 10%); */
+}
+
+
+Button{
+  width: 60%;
+  height: 20%;
+  margin-top: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #fff;
+  display: inline-block;
+  background-color: #0e61c9;
+}
+.tit{
+font-size: 22px;
+}
+
+.ab{
+  z-index: 99;
+}.img1{
+  margin-top: 50px;
+  margin-left: 131px;
+}
+.enjoy-css {
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 10px 20px;
+    border: 1px solid #b7b7b7;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    font: normal 16px/normal "Times New Roman", Times, serif;
+    color: rgba(0,142,198,1);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: rgba(252,252,252,1);
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
+    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  .tab{
+z-index: 99;
+
+  }
+  TabView {
+    tab-text-color:black;
+    /* tab-background-color: #0e61c9; */
+    tab-background-color: white;
+    selected-tab-text-color: white;
+    android-selected-tab-highlight-color:  #0e61c9;
+    tab-border-radius: 20%;
+    font-size: 16;
+}
+
+.fl{
+
+  /* background-image: linear-gradient(to bottom, #d514de, #a954f2, #7870fa, #4681f7, #128deb); */
+}
+  .bg{
+  /* background-image: linear-gradient(to right top, #14ebcf, #00d8ff, #00bbff, #008bff, #d812eb); */
+z-index: -1;
+}
